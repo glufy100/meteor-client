@@ -398,9 +398,11 @@ public class Modules extends System<Modules> {
     }
 
     private void initCombat() {
+        add(new AimAssist());
         add(new AnchorAura());
         add(new AntiAnvil());
         add(new AntiBed());
+        add(new ArrowDmg());
         add(new ArrowDodge());
         add(new AutoAnvil());
         add(new AutoArmor());
@@ -411,13 +413,16 @@ public class Modules extends System<Modules> {
         add(new AutoWeapon());
         add(new AutoWeb());
         add(new BedAura());
+        add(new BoatKill());
         add(new BowAimbot());
         add(new BowSpam());
         add(new Burrow());
         add(new Criticals());
         add(new CrystalAura());
+        add(new ExplosionAura());
         add(new Hitboxes());
         add(new HoleFiller());
+        add(new InstantKill());
         add(new KillAura());
         add(new Offhand());
         add(new Quiver());
@@ -587,6 +592,7 @@ public class Modules extends System<Modules> {
         add(new ServerSpoof());
         add(new SoundBlocker());
         add(new Spam());
+        add(new AutoDrop());
     }
 
     public static class ModuleRegistry extends SimpleRegistry<Module> {
